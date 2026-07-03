@@ -1,0 +1,28 @@
+# Secrets
+.env
+
+# Spotify personal data
+Spotify Extended Streaming History/
+Streaming_History_Audio*.json
+StreamingHistory*.json
+*.json
+
+# Generated output files
+spotify_data_with_genres.csv
+weekly_genre_minutes.csv
+weekly_genre_shares.csv
+genre_preference_forecast.csv
+
+# Cache folders
+spotify_cache/
+lastfm_cache/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db
