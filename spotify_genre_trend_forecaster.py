@@ -1,29 +1,5 @@
+""" MY GENRE TREND FORECASTER
 """
-Spotify Genre Trend Forecaster using Last.fm
-
-What this script does:
-1. Loads Spotify streaming-history JSON files.
-2. Cleans artist/track metadata safely, including None/NaN values.
-3. Fetches genres/tags from Last.fm only once per unique artist-track pair.
-4. Uses a hashed JSON cache so reruns are much faster.
-5. Saves an enriched listening-history CSV with genres.
-6. Builds weekly genre listening shares.
-7. Forecasts likely future genre preferences for your top genres.
-
-Before running:
-- Install dependencies:
-    pip install pandas requests tqdm numpy
-
-- Optional, for better forecasting:
-    pip install statsmodels
-
-- Get a Last.fm API key:
-    https://www.last.fm/api/account/create
-
-The key is set as an environment variable:
-Just paste it when prompted.
-"""
-
 from __future__ import annotations
 
 import hashlib
